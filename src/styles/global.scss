@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	@font-face {
+		font-family: ITCAvant;
+		src: url(itc/ITCAvantGardeStd-Bold.otf) format("truetype");
+		font-weight: 700;
+		font-style: normal;
+	}
+	@font-face {
+		font-family: ITCAvant;
+		src: url(itc/ITCAvantGardeStd-Demi.otf) format("truetype");
+		font-weight: 500;
+		font-style: normal;
+	}
+	@font-face {
+		font-family: ITCAvant;
+		src: url(itc/ITCAvantGardeStd-Md.otf) format("truetype");
+		font-weight: 400;
+		font-style: normal;
+	}
+	@font-face {
+		font-family: ITCAvant;
+		src: url(itc/ITCAvantGardeStd-Bk.otf) format("truetype");
+		font-weight: 300;
+		font-style: normal;
+	}
+	@font-face {
+		font-family: ITCAvant;
+		src: url(itc/ITCAvantGardeStd-XLt.otf) format("truetype");
+		font-weight: 100;
+		font-style: normal;
+	}
+}
+
+body {
+	overflow-x: hidden;
+}
+
+.right-mob-margin {
+	@media (max-width: 640px) {
+		margin-right: 80px;
+	}
+}
+.left-mob-margin {
+	@media (max-width: 640px) {
+		margin-left: 80px;
+	}
+}
+
+[contenteditable="true"]:empty:before {
+	content: attr(placeholder);
+	display: block;
+	color: #8fb436;
+}
+
+.gradient-black {
+	background: linear-gradient(
+		180deg,
+		rgba(255, 255, 255, 0) 0%,
+		rgba(0, 0, 0, 0.8) 60.94%
+	);
+}
+.react-multi-carousel-item {
+	@media (max-width: 640px) {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+.react-multi-carousel-list {
+	padding-bottom: 4rem;
+}
+.react-multi-carousel-dot-list {
+	bottom: 5px;
+	.react-multi-carousel-dot {
+		width: 19px;
+		height: 19px;
+		background-color: #868686;
+		border-radius: 50%;
+		margin: 0 0.25rem;
+		button {
+			background-color: transparent !important;
+			border-width: 0;
+		}
+		&.react-multi-carousel-dot--active {
+			background-color: #8fb436;
+		}
+	}
+}

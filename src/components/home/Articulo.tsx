@@ -24,7 +24,7 @@ const Articulo = ({
 	return (
 		<div
 			ref={ref}
-			className={`w-full md:w-1/3 text-sm flex-col flex mb-8 sm:mb-0 transition-all duration-1000 ease-in-out ${
+			className={`w-full text-sm flex-col flex mb-8 sm:mb-0 transition-all duration-1000 ease-in-out ${
 				inView ? "opacity-100" : "opacity-0 -translate-y-16"
 			} ${className}`}
 		>

@@ -72,7 +72,7 @@ const Articulos = () => {
 								lastColor="text-greenmain"
 							/>
 						</div>
-						<div className="sm:flex gap-8 md:gap-28 mb-8 sm:mb-12">
+						<div className="sm:grid sm:grid-cols-2 md:grid-cols-3 gap-8 mb-8 sm:mb-12">
 							{nodes.map((art, i) => (
 								<Articulo
 									key={`articulo${i}`}
